@@ -1,0 +1,427 @@
+/*
+Theme Name: LeoAW
+Description: My own theme
+Author: Leo Ari Wibowo
+Author URI: http://leoaw.com
+Theme URI: http://leoaw.com
+Version: 3.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: white, grey, light, responsive-layout, custom-menu, featured-images, theme-options, threaded-comments
+*/
+
+@import "bourbon";
+@import "base";
+@import "variables";
+@import "neat";
+
+/**
+ * LAYOUT
+ */
+
+#container {
+    @include outer-container;
+    height: 100%;
+}
+
+#left {
+    background: #141618;
+    float: left;
+    height: 100%;
+    padding: 4% 6%;
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.5s;
+    overflow: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    &.animate {
+        background: #141618;
+        transition: background-color 0.5 ease-in-out;
+        transition-delay: 0.5s;
+    }
+    
+    small {
+        margin-top: 100px;
+        display: block;
+    }
+    #left-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-height: 768px) {
+    #left-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#right {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    -webkit-box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.5s;
+    z-index: 999;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    &.animate {
+        width: 94%;
+        transition: all 0.5s ease-in-out;
+    }
+}
+#workheadline {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul#socmed {
+    list-style: none;
+    position: absolute;
+    font-size: 18px;
+    top: 6%;
+    right: 6%;
+    li {
+        display: inline-block;
+        padding: 12px;
+        a {
+            color: #141618;
+        }
+    }
+}
+
+#content {
+    background: #141618;
+    top: 0;
+    right: -70%;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    padding: 8% 6%;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index: 999;
+    -webkit-box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    box-shadow: -8px 0px 73px -6px rgba(0,0,0,0.75);
+    &.animate {
+        right: 0;
+        width: 50%;
+        transition: all 1s ease-in-out;
+        transition-delay: .4s;
+    }
+
+    dl {
+        width: 440px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    dt {
+        float: left;
+        width: 40px;
+        /* adjust the width; make sure the total of both is 100% */
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+    }
+    dd {
+        float: left;
+        width: 400px;
+        /* adjust the width; make sure the total of both is 100% */
+        padding: 0;
+        margin: 0;
+        &:before {
+            content: "  /  ";
+        }
+    }
+
+    .project {
+        margin-bottom: 120px;
+        .title {
+            position: relative;
+            span.number {
+                color: #11998e;
+                font-size: 90px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                position: relative;
+            }
+            h2 {
+                background: rgba(20, 22, 24, 0.95);
+                padding: 2px 6px;
+                position: absolute;
+                top: 46px;
+                left: 62px;
+            }
+        }
+        .content {
+            margin-top: 20px;
+            margin-left: 66px;
+        }
+        .project-spek {
+            font-size: 10px;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            border-bottom: 1px dotted #6E6E6E;
+        }
+        .project-desc {
+            padding-top: 20px;
+            font-size: 14px;
+            a {
+                background: #38ef7d;
+                color: #141618;
+                display: inline-block;
+                font-size: 10px;
+                margin-top: 20px;
+                padding: 8px;
+                text-transform: uppercase;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    background: #11998e;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+#nav-toggle {
+    color: #C6CFD6;
+    top: 50%;
+    right: -6%;
+    padding: 32px 4px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.9s ease-in-out;
+    width: 6%;
+    &.animate {
+        right: 94%;
+        transition: all 0.9s ease-in-out;
+    }
+}
+
+#nav-toggle-bounce {
+    color: #141618;
+    top: 50%;
+    left: 6%;
+    padding: 32px 42px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    z-index: 99;
+    width: 300px;
+    &.animate {
+        left: -40%;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.3s;
+    }
+    #toggle-text {
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        top: 36px;
+        left: 170px;
+    }
+    i.icon-left {
+        opacity: .6;
+    }
+}
+hr {
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 440px;
+    height: 1px;
+    border: 1px solid #141618;
+    transition: all 0.7s ease-in-out;
+    margin-top: 43px;
+    &.animate {
+        left: 46%;
+        transition: all 5s ease-in-out;
+        transition-delay: 0.5s;
+    }
+}
+
+#inquiry {
+    color: #141618;
+    position: absolute;
+    top: 50%;
+    margin-top: 34px;
+    z-index: 999;
+    font-size: 12px;
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+    right: -100%;
+    a {
+        background: #141618;
+        border-radius: 30px;
+        color: #F7F7F7;
+        padding: 14px 20px;
+        &:hover {
+            
+        }
+    }
+    &.animate {
+        opacity: 1;
+        right: 64%;
+        transition: all 5s ease-in-out;
+        transition-delay: 0.5s;
+    }
+}
+
+#works {
+    color: #141618;    
+    font-size: 14px;
+    z-index: 999;
+    margin: 0;
+    left: -100%;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &.animate {
+        left: 6%;
+        transition: all 2s ease-in-out;
+    }
+    a {
+        color: #141618;
+    }
+    ol { 
+        counter-reset: item;
+        list-style-type: none;
+    }
+    li {
+        padding: 4px 0;
+    }
+    li:before { 
+        content: counter(item, decimal-leading-zero) "   "; 
+        counter-increment: item;
+    }
+}
+
+
+/**
+ * TYPOGRAPHY
+ */
+h1#site-title {
+    font-size: 16px;
+    a {
+        text-decoration: none;
+        color: #11998e;
+    }
+}
+
+h3#sub-heading {
+    color: #11998e;
+    font-weight: 700 !important;
+    font-size: 16px;
+}
+
+h2#tagline {
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 1.25;
+}
+
+#workheadline h2 {
+    font-size: 400px;
+    letter-spacing: -4px;
+    line-height: 1;
+    margin: 0;
+    right: -100%;
+    opacity: .14;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    &.animate {
+        right: 20%;
+        transition: all 4s ease-in-out;
+        transition-delay: 0.75s;
+    }
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('font/fontello.eot?63612721');
+    src: url('font/fontello.eot?63612721#iefix') format('embedded-opentype'),
+         url('font/fontello.woff2?63612721') format('woff2'),
+         url('font/fontello.woff?63612721') format('woff'),
+         url('font/fontello.ttf?63612721') format('truetype'),
+         url('font/fontello.svg?63612721#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('font/fontello.svg?63612721#fontello') format('svg');
+    }
+  }
+  */
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+  .icon-left:before { content: '\e800'; } /* '' */
+  .icon-right:before { content: '\e801'; } /* '' */
+  .icon-behance:before { content: '\f1b4'; } /* '' */
+  .icon-whatsapp:before { content: '\f232'; } /* '' */
