@@ -100,6 +100,25 @@ h6 {
   display: block;
 }
 
+.header-outer-container .top-bar .site-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-right: 0;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.header-outer-container .top-bar .site-logo:last-child {
+  margin-right: 0;
+}
+
+.header-outer-container .top-bar .site-logo h1 {
+  color: #fff;
+}
+
 .header-outer-container .daftar-kontak {
   float: left;
   display: block;
@@ -269,23 +288,17 @@ h6 {
   background: #e6efc2;
 }
 
-.site-logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-right: 0;
-  font-family: 'Exo', sans-serif;
-  font-weight: 900;
-  letter-spacing: -1px;
+.blog-container figure {
+  margin: 0;
 }
 
-.site-logo:last-child {
-  margin-right: 0;
+.blog-container figure img {
+  border: 10px solid #D2D2D2;
 }
 
-.site-logo h1 {
-  color: #fff;
+.blog-container figcaption {
+  font-size: 12px;
+  text-align: center;
 }
 
 /* ABOUT */
@@ -600,40 +613,25 @@ h6 {
   display: block;
 }
 
-@media screen and (max-width: 799px) {
-  .footer-outer-container .footer-content .site-logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    text-align: center;
-  }
-  .footer-outer-container .footer-content .site-logo:last-child {
-    margin-right: 0;
-  }
-}
-
-.copyright {
+.footer-outer-container .footer-content .site-logo {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
-  padding-top: 26px;
-  text-align: right;
+  width: 100%;
+  margin-right: 0;
+  text-align: center;
 }
 
-.copyright:last-child {
+.footer-outer-container .footer-content .site-logo:last-child {
   margin-right: 0;
 }
 
-@media screen and (max-width: 799px) {
-  .copyright {
-    display: none;
-  }
-}
-
-.copyright p {
-  font-size: 12px;
+.footer-outer-container .footer-content .site-logo h1 {
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  padding-top: 60px;
 }
 
 /* BUTTON */
