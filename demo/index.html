@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/min/reset.css" />
     <link rel="stylesheet" href="css/min/960.css" />
     <link rel="stylesheet" href="css/min/text.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -42,19 +44,22 @@
         <!-- MENU NAVIGASI -->
         <div class="grid_12">
             <nav class="topnav">
-                <a class="active" href="https://leoaw.com/demo/">Home</a>
-                <a href="https://leoaw.com/demo/page.html">Tentang Kami</a>
-                <a href="https://leoaw.com/demo/page.html">Tutorial</a>
-                <a href="https://leoaw.com/demo/page.html">Demo</a>
-                <a href="https://leoaw.com/demo/page.html">Hubungi Kami</a>
+                <a class="active" href="#home">Home</a>
+                <a href="#tentang-kami">Tentang Kami</a>
+                <a href="#tutorial">Tutorial</a>
+                <a href="#demo">Demo</a>
+                <a href="#kontak">Hubungi Kami</a>
             </nav>
         </div>
         <div class="clear"></div>
 
         <!-- SLIDE -->
         <div id="slider">
-            <div class="grid_12">
-                <img src="img/slide.jpg" alt="">
+            <div class="grid_12 fade">
+                <img src="img/slide1.jpg" alt="">
+                <img src="img/slide2.jpg" alt="">
+                <img src="img/slide3.jpg" alt="">
+                <img src="img/slide4.jpg" alt="">
             </div>
             <div class="clear"></div>
         </div>
@@ -134,6 +139,19 @@
             </ul>
         </div>
     </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+    jQuery('.fade').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+        autoplay: true
+    });
+    </script>
 </body>
 
 </html>
