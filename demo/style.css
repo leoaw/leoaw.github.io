@@ -45,22 +45,22 @@ p {
 
 .socmed > ul {
     list-style: none;
-    margin-top: 10px;
 }
 
 .socmed li {
     display: inline;
+    margin-left: 6px;
 }
 
 .hotline {
     display: inline-block;
-    margin-top: 10px;
 }
 
 .hotline-text {
     text-align: left;
     display: block;
     text-transform: uppercase;
+    font-size: 11px;
 }
 
 .hotline-number {
