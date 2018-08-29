@@ -1,5 +1,5 @@
 body {
-    background: url(img/background.jpg) top center no-repeat #f4f8f9;
+    background: #c5c9cf;
     color: #333;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -24,13 +24,17 @@ p {
     padding: 10px 0;
 }
 
+.slick-arrow {
+    display: none !important;
+}
+
 /* MAIN CONTAINER */
 
 #main-container {
     -webkit-box-shadow: 0px 0px 47px 0px rgba(65, 74, 79, 0.55);
     -moz-box-shadow: 0px 0px 47px 0px rgba(65, 74, 79, 0.55);
     box-shadow: 0px 0px 47px 0px rgba(65, 74, 79, 0.55);
-    background: #fff;
+    background: #f5f5f5;
     padding: 20px 10px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -148,8 +152,16 @@ p {
 /* TENTANG KAMI */
 
 .tentang-kami { 
-    background: url(img/maskot.jpg) bottom right no-repeat;
+    background: url(img/maskot.jpg) bottom right no-repeat #fff;
     max-height: 224.250px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+    box-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+
+.tentang-kami-content {    
+    padding: 10px 20px;
 }
 
 .more-button {
