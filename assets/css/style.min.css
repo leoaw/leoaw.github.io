@@ -266,6 +266,9 @@ h1.hero {
     .sanmar>.title {
         margin-bottom: 140px
     }
+    .hide-on-mobile {
+        display: none;;
+    }
 }
 
 @media only screen and (min-device-width:841px) and (max-device-width:1366px) {
