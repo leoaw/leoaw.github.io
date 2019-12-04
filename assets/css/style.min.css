@@ -263,6 +263,9 @@ h1.hero {
     .desc {
         order: 1
     }
+    .anggrek>.title {
+        margin-bottom: 50px
+    }
     .sanmar>.title {
         margin-bottom: 140px
     }
