@@ -1,0 +1,139 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables"; 
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* prevents horizontal scroll bars */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* disable webkit tap highlight */
+    height: 100%;
+    /* fixes focus scrolling in Safari (OS X) */
+}
+
+body {
+    background: $black;
+    color: #eaeaea;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $gray;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 0s linear;
+    transition-property: background-position;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:visited {
+    color: #0E0B08;
+    outline: hidden;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: $gray;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 1.275rem;
+}
+
+h2 {
+  font-size: 1.200rem;
+}
+
+h3 {
+  font-size: 1.150rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* WRAPPER */
+#wrapper {
+    @include outer-container;
+}
+.header {
+    @include span-columns(12);
+    padding: 30px 0;
+}
+
+/* LOGO */
+.logo {
+    @include span-columns(6 of 12);
+    span {
+        font-family: "Exo 2", sans-serif;
+        font-size: 24px;
+        color: $yellow;
+        font-weight: 800;
+        letter-spacing: -2px;
+    }
+}
+.chat {
+    @include span-columns(6 of 12);
+}
