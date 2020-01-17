@@ -21,7 +21,6 @@ body {
   color: #eaeaea;
   font-family: 'Hind', sans-serif;
   font-size: 1.6rem;
-  line-height: 3rem;
   color: #f7f7f7;
   margin: 0;
   padding: 0;
@@ -121,7 +120,7 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 30px 0; }
+  padding: 40px 0; }
   .header:last-child {
     margin-right: 0; }
 
@@ -160,13 +159,13 @@ p {
 
 /* HERO */
 .hero {
-  padding: 160px 0 120px; }
+  padding: 120px 0 120px; }
   .hero h1 {
     font-size: 132px;
     letter-spacing: -10px;
     color: #faed25;
     font-weight: 700;
-    margin: 50px 0; }
+    margin-bottom: 0; }
   .hero .sub {
     font-size: 24px;
     font-weight: 600;
