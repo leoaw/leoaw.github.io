@@ -151,4 +151,5 @@ p {
   .chat a {
     background: #faed25;
     padding: 6px 28px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    text-transform: lowercase !important; }
