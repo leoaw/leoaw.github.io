@@ -131,7 +131,7 @@ p {
 
 /* HEADER */
 .logo {
-    @include span-columns(6 of 12);
+    @include span-columns(4 of 12);
     span {
         font-family: "Exo 2", sans-serif;
         font-size: 24px;
@@ -141,7 +141,7 @@ p {
     }
 }
 .chat {
-    @include span-columns(6 of 12);
+    @include span-columns(8 of 12);
     font-weight: 700;
     font-size: 16px;
     color: $black;
