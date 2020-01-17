@@ -188,6 +188,9 @@ p {
 }
 
 /* CONTACT */
+a.widget-link {
+    color: #fff !important;
+}
 .widget-contact {
     @include span-columns(4);
     @include media($mobile) {

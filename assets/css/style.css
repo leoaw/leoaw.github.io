@@ -188,6 +188,9 @@ p {
     letter-spacing: -1px; }
 
 /* CONTACT */
+a.widget-link {
+  color: #fff !important; }
+
 .widget-contact {
   float: left;
   display: block;
