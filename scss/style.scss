@@ -152,6 +152,9 @@ p {
         padding: 6px 28px;
         border-radius: 3px;
         text-transform: lowercase !important;
+        @include media($mobile) {
+            padding: 6px;
+        }
     }
     
 }
