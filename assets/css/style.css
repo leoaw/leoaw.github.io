@@ -102,11 +102,16 @@ p {
   text-align: justify; }
 
 /* WRAPPER */
-#wrapper {
+#container {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/HOMEPAGE.jpg) top center no-repeat; }
+
+.wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  #wrapper::after {
+  .wrapper::after {
     clear: both;
     content: "";
     display: block; }
@@ -142,7 +147,6 @@ p {
   width: 48.82117%;
   font-weight: 900;
   font-size: 16px;
-  letter-spacing: -1px;
   color: #242424;
   text-align: right;
   padding-top: 2px; }
