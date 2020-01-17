@@ -22,7 +22,7 @@ body {
   font-family: 'Hind', sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
-  color: #bfbfbf;
+  color: #f7f7f7;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -125,7 +125,7 @@ p {
   .header:last-child {
     margin-right: 0; }
 
-/* LOGO */
+/* HEADER */
 .logo {
   float: left;
   display: block;
@@ -145,7 +145,7 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 16px;
   color: #242424;
   text-align: right;
@@ -157,3 +157,29 @@ p {
     padding: 6px 28px;
     border-radius: 3px;
     text-transform: lowercase !important; }
+
+/* HERO */
+.hero {
+  padding: 160px 0 120px; }
+  .hero h1 {
+    font-size: 132px;
+    letter-spacing: -10px;
+    color: #faed25;
+    font-weight: 700;
+    margin: 50px 0; }
+  .hero .sub {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px; }
+
+/* CONTACT */
+.widget-contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border-radius: 3px;
+  background: #0f1311;
+  padding: 2.35765%; }
+  .widget-contact:last-child {
+    margin-right: 0; }
