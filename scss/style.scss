@@ -147,13 +147,16 @@ p {
     color: $black;
     text-align: right;
     padding-top: 2px;
+    @include media($mobile) {
+        padding-top: 7px;
+    }
     a {
         background: $yellow;
         padding: 6px 28px;
         border-radius: 3px;
         text-transform: lowercase !important;
         @include media($mobile) {
-            padding: 6px;
+            padding: 6px 12px;
         }
     }
     
