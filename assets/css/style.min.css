@@ -13,7 +13,7 @@ body {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #2d142c;
+    background: url(../images/hero.png) top center no-repeat #2d142c;
     background-size: cover;
     color: #d8c1c0;
     font-family: 'Heebo', sans-serif;
@@ -65,9 +65,14 @@ h6 {
     line-height: 1.5
 }
 
+h3 {
+    font-weight: normal;
+    color: #d8c1c0;
+}
+
 .site-name a {
     text-decoration: none;
-    color: #ee4540;
+    color: #fff;
     font-family: 'Hind', sans-serif;
     font-weight: 700;
     letter-spacing: -1px;
@@ -80,20 +85,43 @@ h6 {
 }
 
 .livechat_button a {
-    color: white;
-    background: #ee4540;
+    color: #262626;
+    background: #eeee40;
     padding: 8px 12px;
-    border-radius: 4px;
     font-family: 'Hind', sans-serif;
     font-weight: 700;
+    text-decoration: none;
+    transition: all .4s ease-in-out
+}
+.livechat_button a:hover {
+    background: #d8c1c0;
+    color: #801336;
+    transition: all .4s ease-in-out
 }
 
+.hero {
+    padding-top: 0 !important;
+}
+.hero-text {
+    padding-bottom: 60px;
+}
 .content,
 .tarikmang {
     padding-top: 50px
 }
 
-.content h1,
+.content h1 {
+    color: #fff;
+    display: block;
+    font-size: 3.7rem;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: -4px;
+    padding-right: 30px;
+    transition: ease .5s;
+    line-height: 1;
+    font-weight: 700;
+}
+
 .tarikmang h2 {
     color: #ee4540;
     display: block;
@@ -102,7 +130,8 @@ h6 {
     letter-spacing: -4px;
     padding-right: 30px;
     transition: ease .5s;
-    line-height: 1
+    line-height: 1;
+    font-weight: 700;
 }
 
 .content.post a {
@@ -185,7 +214,7 @@ h1.hero {
 }
 
 .work {
-    padding: 60px 0
+    padding: 20px 0
 }
 
 .title {
@@ -236,7 +265,7 @@ h1.hero {
     .columns.work {
         display: flex;
         flex-flow: column;
-        padding: 60px 0
+        padding: 20px 0
     }
     .thumb {
         order: 0
@@ -266,16 +295,13 @@ h1.hero {
     .columns.work {
         display: flex;
         flex-flow: column;
-        padding: 60px 0
+        padding: 20px 0
     }
     .thumb {
         order: 0
     }
     .desc {
         order: 1
-    }
-    .anggrek>.title {
-        margin-bottom: 50px
     }
     .sanmar>.title {
         margin-bottom: 140px
