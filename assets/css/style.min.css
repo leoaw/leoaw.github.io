@@ -13,8 +13,7 @@ body {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url(../images/hero.png) top center no-repeat #2d142c;
-    background-size: cover;
+    background: url(../images/hero.jpg) top left no-repeat #2d142c;
     color: #d8c1c0;
     font-family: 'Heebo', sans-serif;
     line-height: 1.5;
