@@ -13,7 +13,7 @@ body {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url(../images/hero.jpg) top left no-repeat #2d142c;
+    background: #2d142c;
     color: #d8c1c0;
     font-family: 'Heebo', sans-serif;
     line-height: 1.5;
@@ -50,7 +50,7 @@ body {
 
 .container {
     max-width: 1800px;
-    padding: 30px
+    padding: 60px 30px 30px
 }
 
 h1,
@@ -78,26 +78,6 @@ h3 {
     font-size: 28px;
 }
 
-.chat {
-    text-align: right;
-    padding-top: 10px;
-}
-
-.livechat_button a {
-    color: #262626;
-    background: #eeee40;
-    padding: 8px 12px;
-    font-family: 'Hind', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all .4s ease-in-out
-}
-.livechat_button a:hover {
-    background: #d8c1c0;
-    color: #801336;
-    transition: all .4s ease-in-out
-}
-
 .hero {
     padding-top: 0 !important;
 }
@@ -110,9 +90,9 @@ h3 {
 }
 
 .content h1 {
-    color: #fff;
+    color: #ee4540;
     display: block;
-    font-size: 3.7rem;
+    font-size: 4.7rem;
     font-family: 'Hind', sans-serif;
     letter-spacing: -4px;
     padding-right: 30px;
