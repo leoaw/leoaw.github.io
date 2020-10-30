@@ -1,0 +1,14 @@
+$desktop: (
+  columns: 12,
+  media: "screen and (min-width: 1024px)",
+);
+
+$tablet: (
+  columns: 12,
+  media: "screen and (max-width: 1023px)",
+);
+
+$mobile: (
+  columns: 12,
+  media: "screen and (max-width: 799px)",
+);
